@@ -7,7 +7,7 @@ function MainHeader(){
     return(
         <>
         <NavigationLinks />
-       <Outlet />
+        <Outlet />
         </>
     );
 }

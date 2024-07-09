@@ -1,11 +1,48 @@
-.App {
-  text-align: center;
+
+
+:root{
+  --light-cyan: #77E4C8;
+  --cyan: #36C2CE;
+  --bg-color:#4535C1 ;
+  --hover-color: #478CCF;
+  --text-shadow: 2px 3px 3px rgba(0,0,0,0.4);
+  --box-shadow: 2px 3px 5px rgba(0,0,0,0.7);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p{
+ font-family: "Nova Mono", monospace; 
 }
+
+body{
+  margin: 2rem 5rem;
+  background: #eee;
+}
+
+.btn{
+  font-size: 0.9rem;
+  font-family: "Nova Mono", monospace;
+  padding: 0.6rem;
+  margin-right: 0.7rem;
+  background: transparent;
+  border: none;
+  /* color: var(--bg-color); */
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--light-cyan);
+  border-radius: 0.5rem;
+  transition: all ease-in 0.3s;
+}
+
+.btn:hover{
+  background: var(--light-cyan);
+  border-radius: 0.5rem;
+  border: 2px solid var(--bg-color);
+  /* padding: 0.8rem; */
+  box-shadow: var(--box-shadow);
+
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,20 +50,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {

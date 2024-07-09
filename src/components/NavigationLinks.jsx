@@ -1,25 +1,37 @@
+import classes from '../css/Navigation.module.css'
+import logo from '../images/logo-clinic.png';
 import { NavLink } from "react-router-dom";
 
 
 function NavigationLinks(){
 
     return(
-        <nav>
-            <h1>Santé Marhaba</h1>
+        <>
+        {/* <div className={classes.box}> */}
+         <nav className={classes.nav_box}>
+            <div className={classes.box_logo}>
+            <img src={logo} alt="logo" />
+            <h1 className={classes.nav__title}>Santé <span>Marhaba</span></h1>
+            </div>
             <ul>
                 <li>
-                    <NavLink to='/'>Accueil</NavLink>
+                    <NavLink to='/' className={(({isActive}) => isActive ? classes.active : undefined)} end>Accueil</NavLink>
                 </li>
                 <li>
-                    <NavLink to='/service'>Services</NavLink>
+                    <NavLink to='/service' className={(({isActive} )=> isActive ? classes.active : undefined)} end>Services</NavLink>
                 </li>
                 <li>
-                    <NavLink to='/contact'>Contacts</NavLink>
+                    <NavLink to='/contact' className={(({isActive}) => isActive ? classes.active : undefined)} end>Contacts</NavLink>
                 </li>
             </ul>
-            <button>Connexion</button>
-            <button>S'inscrire</button>
+        <div className={classes.btn__box}>
+        <button className='btn'>Connexion</button>
+        <button className='btn'>S'inscrire</button>
+
+        </div>
         </nav>
+      {/* </div> */}
+       </>
     );
 }
 

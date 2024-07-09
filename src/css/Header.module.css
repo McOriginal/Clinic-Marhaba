@@ -1,0 +1,46 @@
+
+
+.header__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem; */
+}
+
+.header__containte p{
+ font-size: 1rem;
+ font-family:  "Nova Mono", monospace;
+}
+.header__containte .p1{
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+
+
+.header__containte h1{
+    font-size: 2rem;
+    font-family: "Salsa", cursive ;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+}
+
+.box_img{
+    max-width: 30%;
+    max-height: 65vh;
+    border-radius: 2rem;
+    background: linear-gradient( to top left,var(--light-cyan), var(--cyan));
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.4);
+
+}
+
+.box_img img{
+    position: relative;
+    right: 20%;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* font-family: "Salsa", cursive; */

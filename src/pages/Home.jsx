@@ -1,26 +1,40 @@
+import Header from "../components/Header";
+import HeaderCards from "../components/HeaderCards";
+import { MdMedicalServices } from "react-icons/md";
+import { FaUserDoctor } from "react-icons/fa6";
+import { TbBus } from "react-icons/tb";
+import { FaScissors } from "react-icons/fa6";
 
-import docteurImg from '../images/docteur.png'
+import classes from '../css/HeaderCards.module.css';
+
+
 
 function Home(){
 
     return(
         <>
-        <header>
-            <div>
-                <div>
-                    <p>Rejoignez-nous</p>
-                    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rem iusto repellat! Esse quasi id rem? Debitis laboriosam eum est. Voluptatum, autem. Temporibus explicabo quas assumenda illo eveniet ab sed dicta dolores ut veritatis! Molestiae unde ipsa, et quisquam perferendis ut itaque.</p>
+        <Header />
+       <div className={classes.cards_container}>
+       <HeaderCards cardLogo={<MdMedicalServices />} 
+        title="24/24 services"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rem iusto repellat! Esse quasi id rem? Debitis laboriosam" 
+        />
 
-                    <button>Prendre un rendez-vous</button>
-                    <button>Voire nos salles</button>
-                </div>
+        <HeaderCards cardLogo={<FaUserDoctor />} 
+        title="des docteurs qualifiée"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rem iusto repellat! Esse quasi id rem? Debitis laboriosam" 
+        />
 
-                <div>
-                    <img src={docteurImg} alt="docteur" />
-                </div>
-            </div>
-        </header>
+        <HeaderCards cardLogo={<TbBus />} 
+        title="Voitures d'urgence"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rem iusto repellat! Esse quasi id rem? Debitis laboriosam" 
+        />
+
+        <HeaderCards cardLogo={<FaScissors />} 
+        title="Opération à succès"
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rem iusto repellat! Esse quasi id rem? Debitis laboriosam" 
+        />
+       </div>
         </>
     );
 }
