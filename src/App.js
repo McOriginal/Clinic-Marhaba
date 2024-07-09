@@ -1,9 +1,9 @@
 import './App.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './pages/Home';
-import Services from './pages/Services';
 import Contact from './pages/Contact';
 import MainHeader from './components/MainHeader';
+import Apropos from './pages/Apropos';
 
 function App() {
 
@@ -17,8 +17,8 @@ function App() {
     element: <Home />
   },
        {
-    path: '/service',
-    element: <Services />
+    path: '/apropos',
+    element: <Apropos />
   },
   {
     path: '/contact',

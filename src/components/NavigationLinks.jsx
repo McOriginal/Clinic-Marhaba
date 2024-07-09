@@ -18,7 +18,7 @@ function NavigationLinks(){
                     <NavLink to='/' className={(({isActive}) => isActive ? classes.active : undefined)} end>Accueil</NavLink>
                 </li>
                 <li>
-                    <NavLink to='/service' className={(({isActive} )=> isActive ? classes.active : undefined)} end>Services</NavLink>
+                    <NavLink to='/apropos' className={(({isActive} )=> isActive ? classes.active : undefined)} end>A propos</NavLink>
                 </li>
                 <li>
                     <NavLink to='/contact' className={(({isActive}) => isActive ? classes.active : undefined)} end>Contacts</NavLink>

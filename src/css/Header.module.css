@@ -13,6 +13,7 @@
 }
 .header__containte .p1{
     color: var(--cyan);
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
