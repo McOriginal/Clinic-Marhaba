@@ -6,6 +6,7 @@ import { TbBus } from "react-icons/tb";
 import { FaScissors } from "react-icons/fa6";
 
 import classes from '../css/HeaderCards.module.css';
+import Footer from "../components/Footer";
 
 
 
@@ -35,6 +36,8 @@ function Home(){
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae rem iusto repellat! Esse quasi id rem? Debitis laboriosam" 
         />
        </div>
+
+       <Footer />
         </>
     );
 }

@@ -1,4 +1,5 @@
 import AboutBox from "../components/AboutBox";
+import Footer from "../components/Footer";
 import TeamBox from "../components/TeamBox";
 import TextWrap from "../components/TextWrap";
 import WhyChooseUs from "../components/WhyChooseUs";
@@ -14,6 +15,8 @@ function Apropos(){
          <TeamBox />
          <WhyChooseUs />
         </section>
+
+        <Footer />
         </>
     );
 }
