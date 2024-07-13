@@ -3,7 +3,7 @@
 
 
 .cards_container__card{
-    max-width: 20%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

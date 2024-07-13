@@ -12,8 +12,8 @@ function AboutBox(){
                     <h1>Lorem ipsum dolor sit amet consectetur </h1>
                     <p className={classes.p2}>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
 
-                    <button className='btn'>Prendre un rendez-vous</button>
-                    <button className='btn'>Voire nos salles</button>
+                    <button className={classes.btn}>Prendre un rendez-vous</button>
+                    <button className={classes.btn}>Voire nos salles</button>
                 </div>
 
                 <div className={classes.box_img}>

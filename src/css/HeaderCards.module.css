@@ -2,20 +2,17 @@
 
 
 .cards_container{
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: -0.4rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: 20px;
 }
 
 .cards_container__card{
-    max-width: 20%;
-    height: 50vh;
     padding: 1rem;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background: white;
     border-radius: 1.5rem;
@@ -49,4 +46,14 @@
 .cards_container__card p{
     text-align: center;
     font-size: 0.8rem;
+}
+
+
+@media screen and (max-width: 900px) {
+ 
+    .cards_container{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        gap: 20px;
+    }
 }

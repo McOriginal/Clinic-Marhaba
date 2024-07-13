@@ -23,6 +23,7 @@ body{
   background: #eee;
 }
 
+
 .btn{
   font-size: 0.9rem;
   font-family: "Nova Mono", monospace;
@@ -60,9 +61,10 @@ body{
 }
 
 .container{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: 20px;
+    text-align: center;
   width: 100%;
 
 }
@@ -217,7 +219,13 @@ body{
 
 
 
-
+@media screen and (max-width: 900px) {
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    gap: 20px;
+  }
+}
 
 
 

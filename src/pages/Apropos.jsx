@@ -15,7 +15,7 @@ function Apropos(){
          <TeamBox />
          <WhyChooseUs />
         </section>
-
+        
         <Footer />
         </>
     );

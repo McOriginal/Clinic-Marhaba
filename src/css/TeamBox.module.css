@@ -9,8 +9,9 @@
 }
 
 .team_card_box{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: 20px;
     justify-content: space-around;
 }
 
@@ -22,12 +23,7 @@
 }
 
 
-.team_card_box{
-    display: flex;
-    /* flex-direction: row; */
-    /* justify-content: center; */
-    align-items: center;
-}
+
 
 .team__containte p{
  font-size: 1rem;
@@ -51,3 +47,11 @@
 
 
 /* font-family: "Salsa", cursive; */
+
+@media screen and (max-width: 900px) {
+    .team_card_box{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        gap: 20px;
+    }
+}
